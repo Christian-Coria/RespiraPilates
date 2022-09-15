@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block title %}
-Profile
+Perfil
 {% endblock title %}
 {% block body %}
 
@@ -13,25 +13,25 @@ Profile
     
     <div class="col-md-4">
       
-    <h1>Enrollment Details</h1>
+    <h1>Detalles de inscripción</h1>
     {% comment %} Contact Us COde  {% endcomment %}
     {% for post in posts %}
     
    
     <ul class="list-group">
-        <li class="list-group-item bg-warning text-dark"><h5>Name : {{post.FullName}}</h5></li>
+        <li class="list-group-item bg-warning text-dark"><h5>Nombre : {{post.FullName}}</h5></li>
         <li class="list-group-item bg-warning text-dark"><h5>Email : {{post.Email}}</h5></li>
-        <li class="list-group-item bg-warning text-dark"><h5>Gender : {{post.Gender}}</h5></li>
-        <li class="list-group-item bg-warning text-dark"><h5>PhoneNumber : {{post.PhoneNumber}}</h5></li>
-        <li class="list-group-item bg-warning text-dark"><h5>DOB : {{post.DOB}}</h5></li>
-        <li class="list-group-item bg-warning text-dark"><h5>Membership plan : {{post.SelectMembershipplan}}</h5></li>
-        <li class="list-group-item bg-warning text-dark"><h5>Trainer : {{post.SelectTrainer}}</h5></li>
-        <li class="list-group-item bg-warning text-dark"><h5>Reference : {{post.Reference}}</h5></li>
-        <li class="list-group-item bg-warning text-dark"><h5>Address : {{post.Address}}</h5></li>
-        <li class="list-group-item bg-warning text-dark"><h5>Payment Status : {{post.paymentStatus}}</h5></li>
-        <li class="list-group-item bg-warning text-dark"><h5>Amount Paid : {{post.Price}}</h5></li>
-        <li class="list-group-item bg-warning text-dark"><h5>Upcoming Due Date : {{post.DueDate}}</h5></li>
-        <li class="list-group-item bg-warning text-dark"><h5>Joining date : {{post.timeStamp}}</h5></li>
+        <li class="list-group-item bg-warning text-dark"><h5>Género: {{post.Gender}}</h5></li>
+        <li class="list-group-item bg-warning text-dark"><h5>Numero de Celular : {{post.PhoneNumber}}</h5></li>
+        <li class="list-group-item bg-warning text-dark"><h5>Fecha de Nacimiento : {{post.DOB}}</h5></li>
+        <li class="list-group-item bg-warning text-dark"><h5>Plan de Membresía : {{post.SelectMembershipplan}}</h5></li>
+        <li class="list-group-item bg-warning text-dark"><h5>Entrenadora : {{post.SelectTrainer}}</h5></li>
+        <li class="list-group-item bg-warning text-dark"><h5>Referencia : {{post.Reference}}</h5></li>
+        <li class="list-group-item bg-warning text-dark"><h5>Dirección : {{post.Address}}</h5></li>
+        <li class="list-group-item bg-warning text-dark"><h5>Estado de pago : {{post.paymentStatus}}</h5></li>
+        <li class="list-group-item bg-warning text-dark"><h5>Cantidad pagada : {{post.Price}}</h5></li>
+        <li class="list-group-item bg-warning text-dark"><h5>Fecha de vencimiento próxima : {{post.DueDate}}</h5></li>
+        <li class="list-group-item bg-warning text-dark"><h5>Dia de ingreso : {{post.timeStamp}}</h5></li>
       
        
       </ul>
@@ -45,7 +45,7 @@ Profile
     <div class="col-md-8">
 
 
-      <div><Center><h2 class="display-4 mt-3"><b>Attendance Data</b></h2></Center></div>
+      <div><Center><h2 class="display-4 mt-3"><b>Datos de asistencia</b></h2></Center></div>
 
   
       
@@ -53,11 +53,11 @@ Profile
         <thead class="thead-warning">
           <tr>
           
-            <th scope="col">Date</th>
+            <th scope="col">Fecha</th>
             <th scope="col">Login</th>
             <th scope="col">Logout</th>
-            <th scope="col">Workout</th>
-            <th scope="col">Trained By</th>
+            <th scope="col">Ejercicio</th>
+            <th scope="col">Entrenado por</th>
           </tr>
         </thead>
         <tbody>

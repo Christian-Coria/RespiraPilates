@@ -1,8 +1,8 @@
 {% extends 'base.html' %} 
-{% block title %} Attendance {% endblock title%}
+{% block title %} Asistencia {% endblock title%}
 {% block head %}
 
-<h1>Apply Attendance</h1>
+<h1>Aplicar Asistencia</h1>
     
 
 <div class="container mt-2">
@@ -25,17 +25,17 @@
       </div>
       {% endfor %} {% comment %} Contact Us COde {% endcomment %}
 
-      <form action="/attendance" method="post">{% csrf_token %}
+      <form action="/Asistencia" method="post">{% csrf_token %}
         {% csrf_token %}
 
 
         <div class="form-group">
             <input
-              type="number"
+              type="Numero"
               class="form-control mt-2"
               value="{{user.username}}"
-              name="PhoneNumber"
-              placeholder="Enter Your Number"
+              name="Numero de Telefono"
+              placeholder="Ingresa tu Numero"
               readonly
               required
             />
@@ -45,22 +45,22 @@
         <div class="form-group">
 
           <select class="form-control mt-2" id="workout" name="workout" required>
-            <option selected>Select Workout</option>
+            <option selected>Seleccionar entrenamiento</option>
             <option value="Biceps">Biceps</option>
             <option value="Triceps">Triceps</option>
-            <option value="Shoulders">Shoulders</option>
-            <option value="Chest">Chest</option>
+            <option value="Shoulders">Espalda</option>
+            <option value="Chest">Gluteos</option>
             <option value="ABS">ABS</option>
             <option value="Back">Back</option>
-            <option value="Warm Up">Warm Up</option>
-            <option value="Treadmill">Treadmill</option>
+            <option value="Warm Up">Calentamiento</option>
+            <option value="Treadmill">Inicio de Entrenamiento</option>
           </select>
         </div>
 
        
           
         <div class="form-group">
-            <label for="logintime" class="text-white">Log In</label>
+            <label for="logintime" class="text-white">Iniciar sesión</label>
           <input
             type="time"
             class="form-control mt-2"
@@ -72,7 +72,7 @@
         </div>
 
         <div class="form-group">
-            <label for="loginout" class="text-white">Log Out</label>
+            <label for="loginout" class="text-white">Cerrar sesión</label>
           <input
             type="time"
             class="form-control mt-2"
@@ -87,7 +87,7 @@
         <div class="form-group">
            
                      <select  class="form-control mt-2" id="trainer" name="trainer"  required>
-                     <option selected> Select Trainer </option>
+                     <option selected> Seleccionar entrenadora</option>
                           {% for  p in SelectTrainer %}
                           
 
@@ -105,7 +105,7 @@
 
         <br />
         <div class="d-grid gap-2">
-          <button class="btn btn-warning" type="submit">Apply Attendance</button>
+          <button class="btn btn-warning" type="submit">Aplicar Asistencia</button>
         </div>
       </form>
     </div>

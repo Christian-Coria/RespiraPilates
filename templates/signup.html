@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 {% block title %}
-SignUp
+Inscribirse
 {% endblock title %}
 {% block head %}
 
-<h1>Sign Up Here</h1>
+<h1>Registrate aquí</h1>
 
 
 <div class="container mt-2">
@@ -27,7 +27,7 @@ SignUp
     <form action="/signup" method="post">{% csrf_token %}
     
         <div class="form-group">
-            <input type="number" class="form-control mb-2" name="usernumber" placeholder="Phone Number" required>
+            <input type="number" class="form-control mb-2" name="usernumber" placeholder="Numero de Celular" required>
             </div>
 
 
@@ -38,22 +38,22 @@ SignUp
     
     
     <div class="form-group">
-    <input type="password" class="form-control mt-2" name="pass1" placeholder="Password" required>
+    <input type="password" class="form-control mt-2" name="pass1" placeholder="Contraseña" required>
     </div>
     
     <div class="form-group">
-    <input type="password" class="form-control mt-2" name="pass2" placeholder="Confirm Password" required>
+    <input type="password" class="form-control mt-2" name="pass2" placeholder="Confirme Contraseña" required>
     </div>
     <br>
     
     
     <div class="d-grid gap-2">
-      <button class="btn btn-light" type="submit">Signup</button>
+      <button class="btn btn-light" type="submit">Inscribirse</button>
     
     </div>
     
     </form>
-    <br><a href="/login">Already User?</a>
+    <br><a href="/login">¿Ya eres usuaria?</a>
     
     
     </div>
