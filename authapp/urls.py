@@ -12,5 +12,4 @@ urlpatterns = [
     path('gallery',views.gallery,name="gallery"),
     path('attendance',views.attendance,name="attendance"),
 
-    
 ]
